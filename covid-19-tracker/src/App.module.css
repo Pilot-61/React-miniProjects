@@ -1,0 +1,34 @@
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img {
+  width: 370px;
+  margin-top: 50px;
+}
+
+@media (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+
+footer {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(51, 255, 0), rgb(130, 221, 130));
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
