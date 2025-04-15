@@ -3,7 +3,6 @@ import Row from "./Row";
 import Banner from './Banner';
 import Navbar from './Navbar';
 import requests from "./requests";
-require("dotenv").config();
 
 function App() {
   return (

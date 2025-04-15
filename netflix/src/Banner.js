@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from "react";
-import axios from "./axios";
 import requests from "./requests";
 import "./Banner.css";
 
 function Banner() {
-  const [movie, setMovie] = useState([]);
+  const [movie, setMovie] = useState({});
 
   useEffect(() => {
-    async function fetchData() {
-      const request = await axios.get(requests.fetchNetflixOriginals);
-      setMovie(
-        request.data.results[
-          Math.floor(Math.random() * request.data.results.length)
-        ]
-      );
-      return request;
+    function fetchData() {
+      // Using the mock data directly
+      if (requests.fetchNetflixOriginals && requests.fetchNetflixOriginals.results) {
+        const mockMovies = requests.fetchNetflixOriginals.results;
+        setMovie(mockMovies[Math.floor(Math.random() * mockMovies.length)]);
+      }
     }
 
     fetchData();

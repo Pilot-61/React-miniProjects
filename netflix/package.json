@@ -8,10 +8,10 @@
     "@testing-library/user-event": "^12.6.2",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "movie-trailer": "^2.0.7",
+    "movie-trailer": "^3.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
     "react-youtube": "^7.13.1",
     "web-vitals": "^0.2.4"
   },
